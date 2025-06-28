@@ -1,0 +1,45 @@
+
+
+data_dir: "data"
+log_dir: "logs"
+CaseStudies_dir: "CaseStudies"
+scenario_dir: "scenarios"
+output_dir: "output"
+expost_dir: "expost"
+input_dir: "input"
+plot_dir : "plots"
+default_data: "default_inputs"
+parameter_dir: "general_parameters"
+building_data_dir: "building_energy_data"
+MCMC_dir: "MCMC_data"
+solver: 'highs'
+mip_gap: 0.05
+
+model_data:
+  root_dir: "heat_network"
+  heat_dem: "Heat_Demand.csv"
+  heat_gen_units: "Heat_Generation_Units.geojson"
+  heat_network: "Heat_Network.geojson"
+  heat_nodes: "Heat_Nodes.geojson"
+  wh_profiles: "Heat_WH_Profiles.csv"
+  cost_parameter: "Cost_Parameter.json"
+
+
+building_data:
+  buildings_gdf: "Building_Data.geojson"
+  building_TS: "Building_TS.csv"
+
+heat_source_data:
+  root_dir: "input"
+  heat_profiles: "input_WastHeatProfiles.xlsx"
+  heat_sources: "input_HeatGenerationUnits.xlsx"
+
+parameter_costs:
+  input_file: "input_ParameterCosts.xlsx"
+
+case_study_data:
+  building_typology: "BuildingTypology.xlsx"
+  outside_temp: "outside_temp.xlsx"
+  solar_gain: "solar_gain.xlsx"
+  transition_matrix_WD: "transition_matrix_WD.xlsx"
+  transition_matrix_WE: "transition_matrix_WE.xlsx"

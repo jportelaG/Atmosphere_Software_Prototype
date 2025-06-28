@@ -28,7 +28,7 @@ gams_part/
 trash_delete_when_finished/
 CaseStudies/
 logs/
-
+cache/
 
 !default_inputs/input_HeatGenerationUnits.xlsx
 !default_inputs/input_ParameterCosts.xlsx

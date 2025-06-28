@@ -1,0 +1,33 @@
+name: Atmosphere_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+#  - contextily=1.6.2
+  - fiona=1.10.1
+  - geopandas=1.0.1
+  - ipykernel=6.29.5
+  - jupyter=1.1.1
+  - matplotlib=3.10.0
+  - nbformat=5.10.4
+  - notebook=7.3.2
+  - numba=0.61.0
+  - openpyxl=3.1.5
+  - osmnx=2.0.1
+  - pandas=2.2.2
+  - pip=24.0
+  - python=3.12.2
+  - pyomo=6.8.2
+  - sphinx=8.2.3
+ # - sphinx_rtd_theme=3.0.2
+  - termcolor=2.1.0
+ # - time=1.9
+  - plotly=6.0.0
+  - pyomo=6.8.2
+  - pyyaml=6.0.2
+  - pip:
+      - contextily==1.6.2
+      - pandas==2.2.2
+      - overpass==0.2.5
+    
+
