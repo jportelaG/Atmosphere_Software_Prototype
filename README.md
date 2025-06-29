@@ -1,5 +1,7 @@
-# Atmosphere_Software_Prototype
-Atmosphere_Software_Prototype
+
+# **District Heating Network Designer Tool**
+![District Heating Network Designer Tool Logo](logoApp.png)
+
 
 Welcome to the **District Heating Network Designer Tool**.  
 This tool allows you to design and optimize district heating networks using real-world data for different locations.
@@ -32,4 +34,13 @@ streamlit run Atmosphere_DH_App.py
 This application has been developed for the ATMOSPHERE project, which was supported by funding from CDTI, with Grant Number MIG-20221006 associated with the ATMOSPHERE Project.
 
 It has been developed in colaboration with Innomerics, the IIT (from Universidad Pontificia Comillas) and IEE (from TU Graz University)
+
+---
+
+<p align="center">
+  <img src="CDTI.png" alt="CDTI Logo" height="60"/>
+  <img src="Logo_innomerics.png" alt="Innomerics Logo" height="60"/>
+  <img src="Logo IIT_Color.jpg" alt="IIT Logo" height="60"/>
+  <img src="Logo_IEE.png" alt="IEE Logo" height="60"/>
+</p>
 
