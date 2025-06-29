@@ -2,10 +2,8 @@
 # **District Heating Network Designer Tool**
 
 <p align="center">
-    <img src="logoApp.jpg" alt="District Heating Network Designer Tool Logo" height="200"/>
+    <img src="logoApp.jpg" alt="District Heating Network Designer Tool Logo" height="400"/>
 </p>
-
-![District Heating Network Designer Tool Logo](logoApp.jpg)
 
 Welcome to the **District Heating Network Designer Tool**.  
 This tool allows you to design and optimize district heating networks using real-world data for different locations.
