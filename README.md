@@ -1,6 +1,6 @@
 
 # **District Heating Network Designer Tool**
-![District Heating Network Designer Tool Logo](logoApp.png)
+![District Heating Network Designer Tool Logo](logoApp.jpg)
 
 
 Welcome to the **District Heating Network Designer Tool**.  
