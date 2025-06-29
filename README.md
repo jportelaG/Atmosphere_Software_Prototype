@@ -23,4 +23,13 @@ Use the sidebar to navigate between different stages:
 - Optimize the network  
 - Visualize the results
 
+To Run the application, download files, set up environment (found in \config folder) and execute in conda command window
+
+```
+streamlit run Atmosphere_DH_App.py
+```
+
 This application has been developed for the ATMOSPHERE project, which was supported by funding from CDTI, with Grant Number MIG-20221006 associated with the ATMOSPHERE Project.
+
+It has been developed in colaboration with Innomerics, the IIT (from Universidad Pontificia Comillas) and IEE (from TU Graz University)
+
