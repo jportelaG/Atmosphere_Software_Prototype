@@ -84,7 +84,7 @@ def fast_TS_generator(case_study_name: str, save_to_disk = False) -> pd.DataFram
 
     # load the transition matrix
     path = os.path.join(config['CaseStudies_dir'],case_study_name,config["parameter_dir"],config["MCMC_dir"])
-    print(os.path.join(path, config["case_study_data"]["transition_matrix_WD"]))
+    
     df_transition_matrix_WD = pd.read_excel(os.path.join(path, config["case_study_data"]["transition_matrix_WD"]), index_col=0)
     df_transition_matrix_WE = pd.read_excel(os.path.join(path, config["case_study_data"]["transition_matrix_WE"]), index_col=0)
     

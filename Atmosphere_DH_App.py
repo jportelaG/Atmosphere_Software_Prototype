@@ -220,7 +220,6 @@ def parameter_settings_update():
     st.markdown("The table below shows the current parameter costs used in the district heating network design.")
     #load the parameter xlsx
     path_read_parameter = os.path.join(config['CaseStudies_dir'],case_study, config['scenario_dir'], scenario, config['input_dir'])
-    path_write_parameter = os.path.join(config['CaseStudies_dir'],case_study, config['scenario_dir'], scenario, config['data_dir'], config['model_data']['root_dir'])
     print("Start: load parameters from: " + path_read_parameter)
     df_parametercost = pd.read_excel(os.path.join(path_read_parameter,config['parameter_costs']['input_file']))
     # Display the parameter costs in a dataframe
@@ -230,7 +229,7 @@ def parameter_settings_update():
     if st.button("Update Parameter Costs"):
         with st.spinner("Updating parameter costs..."):
             # Save the updated parameter costs to the file
-            df_parametercost.to_excel(os.path.join(path_write_parameter, config['parameter_costs']['input_file']), index=False)
+            df_parametercost.to_excel(os.path.join(path_read_parameter, config['parameter_costs']['input_file']), index=False)
             st.success("Parameter costs updated successfully!")
     
     # add division line to separate the section
@@ -240,7 +239,6 @@ def parameter_settings_update():
     st.markdown("This section loads the heat generation units from the disk for the selected **Case study and scenario**.")
     
     path_read_parameter = os.path.join(config['CaseStudies_dir'],case_study, config['scenario_dir'], scenario, config['input_dir'])
-    path_write_parameter = os.path.join(config['CaseStudies_dir'],case_study, config['scenario_dir'], scenario, config['data_dir'], config['model_data']['root_dir'])
     print("Start: load heat generation units from: " + path_read_parameter)
     df_heatsourcet = pd.read_excel(os.path.join(path_read_parameter,config['heat_source_data']['heat_sources']))
     
@@ -252,7 +250,7 @@ def parameter_settings_update():
     if st.button("Update Heat Source Parameters"):
         with st.spinner("Updating parameter costs..."):
             # Save the updated parameter costs to the file
-            df_heatsourcet.to_excel(os.path.join(path_write_parameter, config['heat_source_data']['heat_sources']), index=False)
+            df_heatsourcet.to_excel(os.path.join(path_read_parameter, config['heat_source_data']['heat_sources']), index=False)
             st.success("Parameter costs updated successfully!")
             
     # Add buttons to open the excel files of other parameters
@@ -329,9 +327,9 @@ def create_building_load_profiles():
                 st.components.v1.html(open(output_file, 'r').read(), height=500)
                 
                 st.success("Load profiles generated and scenario data saved.")
+
+                buildings_TS = hd_time_series_generator.fast_TS_generator(case_study, True)
         
-        if st.button("Generate Building-level load profiles2"):     
-            df_HD_time_series = hd_time_series_generator.fast_TS_generator(case_study, True)
     
     
     # add dropdown menu to select the building to plot
@@ -487,7 +485,7 @@ def optimize_network():
     if st.button("Run Optimization & Visualize Decisions"):
         with st.spinner("Optimizing network design..."):
             # run the combined optimisation model
-            # model.run_model(case_study, scenario, config)
+            model.run_model(case_study, scenario, config)
             
             # 1. Read model output and input data
             model_output_data = data.read_output_from_disk(case_study, scenario, config)
