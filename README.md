@@ -1,6 +1,9 @@
 
 # **District Heating Network Designer Tool**
-![District Heating Network Designer Tool Logo](logoApp.jpg)
+
+<p align="center">
+    <img src="logoApp.jpg" alt="District Heating Network Designer Tool Logo" height="200"/>
+</p>
 
 
 Welcome to the **District Heating Network Designer Tool**.  
@@ -38,9 +41,9 @@ It has been developed in colaboration with Innomerics, the IIT (from Universidad
 ---
 
 <p align="center">
-  <img src="CDTI.png" alt="CDTI Logo" height="60"/>
-  <img src="Logo_innomerics.png" alt="Innomerics Logo" height="60"/>
+  <img src="CDTI.jpg" alt="CDTI Logo" height="60"/>
+  <img src="Logo_innomerics.jpg" alt="Innomerics Logo" height="60"/>
   <img src="Logo IIT_Color.jpg" alt="IIT Logo" height="60"/>
-  <img src="Logo_IEE.png" alt="IEE Logo" height="60"/>
+  <img src="Logo_IEE.jpg" alt="IEE Logo" height="60"/>
 </p>
 
